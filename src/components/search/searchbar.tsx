@@ -6,19 +6,24 @@ import { IconCaretDownFilled, IconSearch } from '@tabler/icons-react'
 import { Menubar, MenubarMenu, MenubarTrigger, MenubarContent, MenubarItem, MenubarSeparator, MenubarSub, MenubarSubTrigger, MenubarSubContent } from '@radix-ui/react-menubar'
 import { MenubarShortcut } from '../ui/menubar'
 
+
+
+
 export default function SearchBar() {
   return (
     
-<div className="flex items-center">
+<div className="flex items-center w-full hidden sm:block sm:flex">
 <Menubar className='ml-2'>
       <MenubarMenu>
-        <div className="flex items-center p-1 border border-solid">
-        <MenubarTrigger>All</MenubarTrigger>
+      <MenubarTrigger>
+        <div className="flex items-center px-2 py-1 border border-solid">
+       All
         <IconCaretDownFilled size={15} color='gray' />
         </div>
-        <MenubarContent>
+        </MenubarTrigger>
+        <MenubarContent className='bg-white p-2 cursor-pointer'>
           <MenubarItem>
-            New Tab <MenubarShortcut>⌘T</MenubarShortcut>
+            All 
           </MenubarItem>
           <MenubarItem>
             New Window <MenubarShortcut>⌘N</MenubarShortcut>
@@ -27,7 +32,7 @@ export default function SearchBar() {
           <MenubarSeparator />
           <MenubarSub>
             <MenubarSubTrigger>Share</MenubarSubTrigger>
-            <MenubarSubContent>
+            <MenubarSubContent className='bg-white'>
               <MenubarItem>Email link</MenubarItem>
               <MenubarItem>Messages</MenubarItem>
               <MenubarItem>Notes</MenubarItem>
@@ -40,7 +45,7 @@ export default function SearchBar() {
         </MenubarContent>
       </MenubarMenu>
       </Menubar>
-<Input type="email" placeholder="Email" />
+<input type="email" placeholder="Search for video series" className='w-[500px] border outline-none p-1'/>
 <IconSearch size={35} className='bg-orange-200 p-2 rounded-br-lg rounded-tr-lg'/>
 </div>
   )
