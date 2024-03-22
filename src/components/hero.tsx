@@ -19,12 +19,12 @@ export default function Hero() {
         </Breadcrumb>
 
         <h1 className='text-2xl font-bold my-2'>संतवाणी</h1>
-        <div className="flex  my-3">
+        <div className="lg:flex  my-3">
        
-            <img src='https://cimg.acharyaprashant.org/images/img-4337ee73-d8a3-4c8b-951b-d09a5a6468d3/10/image.jpg' alt="Image" className='w-[1000px] h-[250px]'  />
+            <img src='https://cimg.acharyaprashant.org/images/img-4337ee73-d8a3-4c8b-951b-d09a5a6468d3/10/image.jpg' alt="Image" className='w-[1000px] h-[250px] rounded-md'  />
        
-<div className="grid-cols-1 pl-3">
-<h1 className='text-xl font-semibold'>
+<div className="grid-cols-1 lg:pl-3">
+<h1 className='text-xl font-semibold mt-2 lg:mt-0'>
 संतों की सीख पर आधारित श्रृंखला
 </h1>
 <p className='text-[17px]'>

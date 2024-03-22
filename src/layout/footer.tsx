@@ -37,7 +37,7 @@ const Contacts=[
 export default function Footer() {
   return (
     <div className='bg-slate-800 text-white p-2'>
-        <div className="sm:flex flex-col space-y-2 md:flex-row justify-between  items-center px-4">
+        <div className="lg:flex  space-y-2 md:flex-row justify-between  items-center px-4">
             <div className="flex-col">
                 <h4 className='mb-2'>
                     Live Sessions
@@ -49,7 +49,7 @@ export default function Footer() {
                 </ul>
             </div>
             <div className=" sm:mt-0 mt-4 flex-col">
-                <h4 className=' mb-2'>
+                <h4 className='pt-3 lg:pt-0 mb-2'>
                     Wisdom Content
                 </h4>
                 <ul>
@@ -59,7 +59,7 @@ export default function Footer() {
                 </ul>
                </div>
                 <div className=" sm:mt-4 mt-0flex-col ">
-                 <h4 className=' mb-2'>
+                 <h4 className='pt-3 lg:pt-0 mb-2'>
                       More
                  </h4>
                  <ul>
@@ -69,7 +69,7 @@ export default function Footer() {
                  </ul>
                  </div>
                  <div className=" sm:mt-4 mt-0 flex-col ">
-                    <h4 className='  mb-2'>
+                    <h4 className='pt-3 lg:pt-0  mb-2'>
                         Social Media
                     </h4>
                     <small className='font-semibold mb-2 '>
@@ -84,7 +84,7 @@ export default function Footer() {
                     
                     </div> 
                     <div className=" sm:mt-4 mt-0 flex-col">
-                    <h4 className='  mb-2'>
+                    <h4 className=' pt-3 lg:pt-0 mb-2'>
                        Download App
                     </h4>
                     <div className="flex items-center space-x-2">

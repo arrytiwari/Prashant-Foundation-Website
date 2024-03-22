@@ -3,14 +3,19 @@
 import React from 'react'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/accordion';
 
-export default function FaqList() {
+
+interface Faq {
+  question: string;
+  answer: string;
+}
+export default function FaqList( {question, answer}: Faq) {
   return (
     <div className="">
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
-        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+        <AccordionTrigger>{question}</AccordionTrigger>
         <AccordionContent>
-          Yes. It adheres to the WAI-ARIA design pattern.
+          {answer}
         </AccordionContent>
       </AccordionItem>
       </Accordion>
