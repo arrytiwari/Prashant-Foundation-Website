@@ -87,11 +87,11 @@ export default function Header() {
           </small>
         </div>
       </div>
-      <div className="flex justify-center items-center bg-slate-800 text-white p-2">
+      <div className="flex  lg:justify-center items-center bg-slate-800 text-white p-2">
         <div className="mr-2 mt-0.5 h-4 w-4 shrink-0 rounded-full border border-white bg-red-600 laptop:mt-0"></div>
         <div className="text-lg font-semibold mx-2">Acharya Prashant is dedicated to building a brighter future for you
         </div>
-        <div className="border border-solid text-sm font-medium leading-none p-2 ml-1 cursor-pointer rounded-md ">Extend your hand</div>
+        <div className="border border-solid text-sm font-medium leading-none p-2 lg:ml-1 cursor-pointer rounded-md w-2/3 md:w-[10%]  lg:w-[10%] ">Extend your hand</div>
       </div>
     </div>
   );
